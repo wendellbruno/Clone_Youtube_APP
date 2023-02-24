@@ -38,7 +38,10 @@ class _HomeState extends State<Home> {
                 onPressed: () {}, icon: const Icon(Icons.account_circle)),
           ],
         ),
-        body: _telas[_indexBottom],
+        body: Container(
+          padding: const EdgeInsets.all(16),
+          child: _telas[_indexBottom],
+        ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           unselectedItemColor: Colors.black,
